@@ -12,7 +12,7 @@ server.app.use(bodyParser.urlencoded({extended:true}));
 server.app.use('/',defaultRoutes);
 server.app.use('/peliculas',peliculaRoutes);
 
-mongoose.connect('mongodb://localhost:27017/moviesDb',(error)=>{
+mongoose.connect('mongodb+srv://SS-peliculas:G4otkyE8TmU0GADv@cluster0.nvhnemn.mongodb.net/moviesDb',(error)=>{
     if(error){
         throw error;
     }
